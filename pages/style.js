@@ -1,8 +1,9 @@
 import styled from 'styled-components'
 
 export const back = styled.div`
+display: flex;
+justify-content: center;
 background-color: #031C29;
-width: 1349px;
 height: 150vh;
 `
 export const Content = styled.section` 

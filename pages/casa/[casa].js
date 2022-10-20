@@ -8,7 +8,7 @@ export default function Casa() {
 
   return (
    <>
-   teste{router.query.casa}
+   {router.query.casa}
    </>
   )
 }

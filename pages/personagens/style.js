@@ -2,7 +2,7 @@ import styled from 'styled-components'
 
 export const Container = styled.div` 
 background-image: url('/background_harry_azul_marinho3.png');
- width: 1345px; 
+ 
  `
 export const Topo = styled.div` 
  background: #A6955A; 
@@ -37,7 +37,7 @@ export const LogoMain = styled.div`
 export const BoxText = styled.div` 
  margin-left: 15px; 
  `
-export const Text = styled.p` 
+export const Text = styled.p`
  color: #A6955A; 
  font-size: 24px; 
  font-weight: 400; 
@@ -57,12 +57,7 @@ export const CardsCenter = styled.main`
 export const CardsImg = styled.div` 
  display:flex; 
  flex-wrap:wrap; 
- justify-content:space-between; 
- align-items:center; 
- align-self:stretch; 
- text-align:center; 
- position:relative; 
- margin-right:100px; 
+ width: 1267px; 
  `
 export const ImgPersonagem = styled.img` 
 width: 163px;
@@ -74,8 +69,11 @@ export const Actor = styled.div`
  color: #A6955A; 
  margin:2rem 1rem; 
  font-weight:600; 
- font-size:1.45rem; 
+ margin: 2rem; 
  `
 export const NamesPersonagens = styled.p` 
+display: flex;
 cursor: pointer;
+justify-content: center;
+
  `
