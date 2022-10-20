@@ -12,7 +12,6 @@ justify-content: center;
 align-items: center;
 z-index: 9999;
 `
-
 export const Content = styled.div`
 display: flex;
 justify-content: space-between;
@@ -31,7 +30,6 @@ border: 2px solid #A6955A;
 width: 256px;
 height: 356px;
 `
-
 export const Props = styled.div`
 margin: 60px 0px 0 38px;
 font-family: 'Arial';

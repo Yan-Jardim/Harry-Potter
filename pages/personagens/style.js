@@ -29,7 +29,7 @@ export const Main = styled.section`
  position: absolute; 
  `
 export const LogoMain = styled.div` 
- background-image: url('hogwarts_shield1.png'); 
+ background-image: url('/hogwarts_shield1.png'); 
  width: 72px; 
  height:84px; 
  z-index:999; 
