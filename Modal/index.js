@@ -8,7 +8,7 @@ export default function Modal(props) {
       <Content>
         <Img>
           <StyleImg>
-            <img width={'256px'} height={'356px'} src={props.personagemAtual.image} />
+            <img width={'256px'} height={'356px'} src={props.personagemAtual.image}  />
           </StyleImg>
         </Img>
         <Props>

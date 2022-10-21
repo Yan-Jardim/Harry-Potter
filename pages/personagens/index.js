@@ -6,19 +6,24 @@ import Link from "next/link";
 
 export default function AllPersonagens() {
 
-  const [resposta, setResposta] = useState([]);
-  const [teste, setTeste] = useState([]);
+  const [apiAll, setApiAll] = useState([]);
+  const [apiGryffindor, setApiGryffindor] = useState([]);
+  const [apiSlytherin, setApiSlytherin] = useState([]);
+  const [apiHufflepuff, setApiHufflepuff] = useState([]);
+  const [apiRavenclaw, setApiRavenclaw] = useState([]);
   const [modalIsOpen, setModalIsOpen] = useState(false);
   const [personagemAtual, setPersonagemAtual] = useState({});
   const [casas, setCasas] = useState([]);
 
   const notImage = "/noHarry.jpg";
 
+
+
   useEffect(() => {
     axios
       .get(`https://hp-api.herokuapp.com/api/characters`)
       .then((response) => {
-        setResposta(response.data);
+        setApiAll(response.data);
       })
   }, []);
 
@@ -26,12 +31,37 @@ export default function AllPersonagens() {
     axios
       .get(`https://hp-api.herokuapp.com/api/characters/house/gryffindor`)
       .then((response) => {
-        setTeste(response.data);
-        console.log(response, "TAIIIIIII")
+        setApiGryffindor(response.data);
+        console.log(response, "gryffindor")
       })
   }, []);
 
+  useEffect(() => {
+    axios
+      .get(`https://hp-api.herokuapp.com/api/characters/house/slytherin`)
+      .then((response) => {
+        setApiSlytherin(response.data);
+        console.log(response, "slytherin")
+      })
+  }, []);
 
+  useEffect(() => {
+    axios
+      .get(`https://hp-api.herokuapp.com/api/characters/house/hufflepuff`)
+      .then((response) => {
+        setApiHufflepuff(response.data);
+        console.log(response, "hufflepuff")
+      })
+  }, []);
+
+  useEffect(() => {
+    axios
+      .get(`https://hp-api.herokuapp.com/api/characters/house/ravenclaw`)
+      .then((response) => {
+        setApiRavenclaw(response.data);
+        console.log(response, "ravenclaw")
+      })
+  }, []);
 
   const handleOpenModal = (personagem) => {
     setPersonagemAtual(personagem);
@@ -47,47 +77,26 @@ export default function AllPersonagens() {
           [key]: value.toString(),
         });
       });
-      console.log(urlParams, "urlParams");
-      setCasas(urlParams);
     }
   }, []);
 
-  const House = () => {
-    switch (casas?.casas) {
-      case 'gryffindor':
-        return (
-          <p>GRIFINORIA</p>
-        );
-      case 'ravenclaw':
-        return (
-          <p>CORVINAL</p>
-        );
-      case 'hufflepuff':
-        return (
-          <p>LUFA-LUFA</p>
-        );
-      case 'slytherin':
-        return (
-          <p>SONSERINA</p>
-        );
+  const ApiHouse = (urlParams) => {
+    if ((urlParams.personagens === apiAll)) {
+      console.log(response, 'geral esta aqui')
+    }
+    else if ((urlParams.personagens.casa.gryffindor === apiGryffindor)) {
+      console.log(response, 'gryff esta aqui')
+    }
+    else if ((urlParams.personagens.casa.slytherin === apiSlytherin)) {
+      console.log(response, 'slyth esta aqui')
+    }
+    else if ((urlParams.personagens.casa.hufflepuff === apiHufflepuff)) {
+      console.log(response, 'huffle esta aqui')
+    }
+    else if ((urlParams.personagens.casa.ravenclaw === apiRavenclaw)) {
+      console.log(response, 'revanc esta aqui')
     }
   };
-
-  const gryffindor = () => {
-    if (urlParams.casa === 'gryffindor') {
-      {
-        teste &&
-          Object.values(teste).map((item) => {
-            return (
-              <>
-                <S.Actor onClick={() => handleOpenModal(item)}>
-                  <S.ImgPersonagem src={item.image !== '' ? item.image : notImage} alt={item.name} />
-                  <S.NamesPersonagens>{item.name}</S.NamesPersonagens>
-                </S.Actor>
-              </>
-            );
-          })};
-    };};
 
   return (
     <>
@@ -101,23 +110,20 @@ export default function AllPersonagens() {
           <S.Main>
             <S.LogoMain />
             <S.BoxText>
-              <S.Text  >{House() ? House() : "PERSONAGENS"}</S.Text>
+              <S.Text>PERSONAGENS</S.Text>
             </S.BoxText>
             <S.Border />
           </S.Main>
           <S.CardsCenter>
             <S.CardsImg>
-              {resposta &&
-                Object.values(resposta).map((item) => {
-                  return (
-                    <>
-                      <S.Actor onClick={() => handleOpenModal(item)}>
-                        <S.ImgPersonagem src={item.image !== '' ? item.image : notImage} alt={item.name} />
-                        <S.NamesPersonagens>{item.name}</S.NamesPersonagens>
-                      </S.Actor>
-                    </>
-                  );
-                })}
+              {ApiHouse && Object.values(apiAll).map((item) => {
+                return (
+                  <S.Actor onClick={() => handleOpenModal(item)}>
+                    <S.ImgPersonagem src={item.image !== '' ? item.image : notImage} alt={item.name} />
+                    <S.NamesPersonagens>{item.name}</S.NamesPersonagens>
+                  </S.Actor>
+                );
+              })};
             </S.CardsImg>
           </S.CardsCenter>
         </S.BoxBack>

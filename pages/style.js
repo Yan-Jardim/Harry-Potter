@@ -5,10 +5,20 @@ display: flex;
 justify-content: center;
 background-color: #031C29;
 height: 150vh;
+@media (max-width: 360px) {
+    flex-direction: column;
+    width: 476px ;
+    height: 1560px;
+}
 `
 export const Content = styled.section` 
  width:1345px; 
  margin:0auto; 
+ @media (max-width:360px) {
+    width:476px; 
+    height:740px;
+    margin: -100px 6px 720px 0;
+}
  `
 export const Target = styled.div` 
  border: 8px solid #A6955A; 
@@ -18,14 +28,24 @@ export const Background = styled.div`
  background-size:cover; 
  background-repeat:no-repeat;
  height:730px; 
+ @media  (max-width:360px) {
+    width: 360pxpx ;
+    height: 740px;
+}
  `
 export const Logo = styled.img` 
  z-index:1; 
  margin: 120px 0px 0 120px; 
+ @media (max-width:360px){
+    margin: 30px 0px 0px 60px;
+ }
  `
 export const BoxBnt = styled.div` 
  margin: 40px 0 0 175px; 
  font-weight: 700px; 
+ @media  (max-width:360px) {
+    margin: 40px 0 0 140px; 
+ }
  `
 export const Button = styled.button` 
  font-family:Arial,Helvetica,sans-serif; 
@@ -50,9 +70,16 @@ export const LogoMain = styled.div`
  width:72px; 
  height:84px; 
  margin-left:120px; 
+ @media  (max-width:360px) {
+    margin: 5px;
+ }
  `
 export const BoxText = styled.div`  
  margin-right:30px; 
+ @media  (max-width:360px) {
+    margin: 0 ;
+    text-transform: uppercase;
+ }
  `
 export const Text = styled.p` 
  color:#A6955A; 
@@ -64,6 +91,10 @@ export const Border = styled.div`
  width:804px; 
  height:0px; 
  margin-right:50px; 
+ @media  (max-width:360px) {
+    margin: 0 ;
+    width: 100px;
+ }
  `
 export const Cards = styled.section` 
 background-color:#031C29 ;
@@ -71,6 +102,11 @@ background-color:#031C29 ;
  justify-content:space-evenly; 
  margin-top:150px; 
  margin-top: 40px;
+ @media  (max-width:360px) {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+ }
  `
 export const Card1 = styled.div` 
  background-image:url('/grifinoria.png'); 
