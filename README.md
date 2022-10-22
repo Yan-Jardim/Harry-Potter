@@ -13,7 +13,7 @@ You can start editing the page by modifying `pages/index.js`. The page auto-upda
 
 ## Tecnologias utilizadas
 -javascript
--javascript
+-react-js
 -styled components
 -css
 
