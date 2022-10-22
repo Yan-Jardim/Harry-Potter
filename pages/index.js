@@ -13,7 +13,7 @@ export default function Home() {
             <S.BoxBnt>
               <Link href={'/personagens?casa=personagens&numbre=personagens'}>
                 <S.Button>
-                  Veja Todos os Personagens
+                  Veja Todos<br/> os Personagens
                 </S.Button>
               </Link>
             </S.BoxBnt>
