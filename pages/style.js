@@ -22,7 +22,8 @@ export const Logo = styled.img`
  z-index:1; 
  margin: 120px 0px 0 120px; 
  @media (max-width:360px) {
-    height: 500px;
+    height: 300px;
+    margin: 100px 0px 0px 400px;
  }
  `
 export const BoxBnt = styled.div` 

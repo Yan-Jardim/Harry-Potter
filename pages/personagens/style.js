@@ -10,11 +10,18 @@ export const Topo = styled.div`
  display: flex; 
  justify-content: center; 
  align-items: center; 
+ @media  (max-width:360px) {
+   height: 200px;
+}
  `
 export const Logo = styled.img` 
  width: 203px; 
  height: 72px; 
- cursor: pointer; 
+ cursor: pointer;
+ @media  (max-width:360px) {
+    width: 350px;
+   height: 150px;
+} 
  `
 export const BoxBack = styled.div` 
  display: flex; 
@@ -27,6 +34,10 @@ export const Main = styled.section`
  align-items: center; 
  margin-top: 30px; 
  position: absolute; 
+ @media  (max-width:360px) {
+   display: flex;
+   flex-direction: column;
+}
  `
 export const LogoMain = styled.div` 
  background-image: url('/hogwarts_shield1.png'); 
@@ -42,35 +53,29 @@ export const Text = styled.p`
  font-size: 24px; 
  font-weight: 400; 
  text-transform: uppercase;
+ @media  (max-width:360px) {
+   font-size: 50px;
+}
  `
 export const Border = styled.div` 
 width: 840px;
 border: 3px solid #A6955A;
 margin-left: 45px;
 z-index: 1;
-@media  (max-width:768px) {
- width: 10px ;
-}
  `
 export const CardsCenter = styled.main` 
  display: flex; 
  justify-content: center; 
  margin-top: 200px; 
  margin-left: 80px; 
- @media  (max-width:768px) {
-    margin: 0 auto;
-    width: 360px;
+ @media  (max-width:360px) {
+   margin-top: 300px;
  }
  `
 export const CardsImg = styled.div` 
  display:flex; 
  flex-wrap:wrap; 
  width: 1267px; 
- @media  (max-width:768px) {
-    display: flex;
-    justify-content: center;
-    margin: 100px 0 0 0;
- }
  `
 export const ImgPersonagem = styled.img` 
 width: 163px;
@@ -88,5 +93,4 @@ export const NamesPersonagens = styled.p`
 display: flex;
 cursor: pointer;
 justify-content: center;
-
  `

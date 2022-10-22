@@ -11,10 +11,10 @@ display: flex;
 justify-content: center;
 align-items: center;
 z-index: 9999;
-@media (max-width:768px) {
+@media (max-width:360px) {
     display: flex;
     justify-content: center;
-    margin: 10px 0px 0px 0px;
+    margin: 200px 0px 0px 500px;
 }
 `
 export const Content = styled.div`
@@ -24,7 +24,7 @@ height: 453px;
 background: #171717;
 flex-direction: column;
 border-radius: 10px;
-@media (max-width:768px) {
+@media (max-width:360px) {
  width: 85%;
  height: 90%;
  overflow: auto;
@@ -42,7 +42,7 @@ display: flex;
 justify-content: center;
 align-items: center;
 
-@media (max-width:768px) {
+@media (max-width:360px) {
  flex-direction: column;
 }
 `;
@@ -50,12 +50,12 @@ align-items: center;
 export const Img = styled.div`
 height: 356px;
 margin-right: 20px;
-@media (max-width:768px) {
+@media (max-width:360px) {
 margin: 0px;
 }
 `
 export const StyleImg = styled.div`
-@media (max-width:768px) {
+@media (max-width:360px) {
     width: 100%;
     display: flex;
     justify-content: center;
@@ -70,7 +70,7 @@ font-style: normal;
 font-weight: 400;
 font-size: 18px;
 line-height: 30px;
-@media (max-width:768px) {
+@media (max-width:360px) {
     margin: 30px 50px 0 0;
 }
 `
