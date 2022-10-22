@@ -3,7 +3,6 @@ import axios from "axios";
 import * as S from "./style";
 import Modal from '../../Modal';
 import Link from "next/link";
-import { useRouter } from "next/router";
 
 export default function AllPersonagens() {
 
@@ -16,7 +15,6 @@ export default function AllPersonagens() {
   const [personagemAtual, setPersonagemAtual] = useState({});
   const [casas, setCasas] = useState();
   const [person, setPerson] = useState();
-  const router = useRouter();
 
   const notImage = "/noHarry.jpg";
   const gryffindor = "gryffindor";
@@ -162,6 +160,35 @@ export default function AllPersonagens() {
     }
   }, []);
 
+  const numbre = () => {
+    switch (person?.numbre) {     
+        case 'gryffindor': return (
+            <>
+                <p>grifinória</p>
+            </>
+        );
+        case 'slytherin': return (
+            <>
+                <p>soncerina</p> 
+           </>
+        );
+        case 'hufflepuff': return (
+            <>
+                <p>lufa-lufa</p>
+            </>
+        );
+        case 'ravenclaw': return (
+            <>
+                <p>corvinal</p>
+            </>
+        );      
+        case 'personagens': return (
+            <>
+                <p>PERSONAGENS</p>
+            </>
+        );      
+    }
+}
 
   return (
     <>
@@ -175,7 +202,7 @@ export default function AllPersonagens() {
           <S.Main>
             <S.LogoMain />
             <S.BoxText>
-              <S.Text>{router.query.casa}</S.Text>
+              <S.Text>{numbre()} </S.Text>
             </S.BoxText>
             <S.Border />
           </S.Main>

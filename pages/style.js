@@ -83,8 +83,9 @@ export const BoxText = styled.div`
  `
 export const Text = styled.p` 
  color:#A6955A; 
- font-size:18px; 
- font-weight:400; 
+ font-weight: 400;
+ font-size: 24px;
+ line-height: 28px;
  `
 export const Border = styled.div` 
  border: 3px solid #A6955A; 
@@ -102,6 +103,7 @@ background-color:#031C29 ;
  justify-content:space-evenly; 
  margin-top:150px; 
  margin-top: 40px;
+ cursor: pointer;
  @media  (max-width:768px) {
     display: flex;
     align-items: center;

@@ -41,6 +41,7 @@ export const Text = styled.p`
  color: #A6955A; 
  font-size: 24px; 
  font-weight: 400; 
+ text-transform: uppercase;
  `
 export const Border = styled.div` 
 width: 840px;
