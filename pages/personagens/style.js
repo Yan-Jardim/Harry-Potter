@@ -2,11 +2,7 @@ import styled from 'styled-components'
 
 export const Container = styled.div` 
 background-image: url('/background_harry_azul_marinho3.png');
-/* @media (max-width: 360px) {
- display: flex;
- flex-direction: column;
- width: 360px;
-} */
+
  `
 export const Topo = styled.div` 
  background: #A6955A; 
@@ -29,7 +25,7 @@ export const Main = styled.section`
  display: flex; 
  justify-content: space-around; 
  align-items: center; 
- margin-top: 45px; 
+ margin-top: 30px; 
  position: absolute; 
  `
 export const LogoMain = styled.div` 
@@ -51,7 +47,7 @@ width: 840px;
 border: 3px solid #A6955A;
 margin-left: 45px;
 z-index: 1;
-@media  (max-width:360px) {
+@media  (max-width:768px) {
  width: 10px ;
 }
  `
@@ -60,7 +56,7 @@ export const CardsCenter = styled.main`
  justify-content: center; 
  margin-top: 200px; 
  margin-left: 80px; 
- @media  (max-width:360px) {
+ @media  (max-width:768px) {
     margin: 0 auto;
     width: 360px;
  }
@@ -69,7 +65,7 @@ export const CardsImg = styled.div`
  display:flex; 
  flex-wrap:wrap; 
  width: 1267px; 
- @media  (max-width:360px) {
+ @media  (max-width:768px) {
     display: flex;
     justify-content: center;
     margin: 100px 0 0 0;

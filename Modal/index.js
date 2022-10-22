@@ -1,11 +1,16 @@
 import React from 'react';
-import { Container, Content, Fechar, Img, Props, P, StyleImg, Color, Alinhamento } from './styles';
+import { Container, Content, Fechar, Img, Props, P, StyleImg, Color, MainContent, Alinhamento, HeaderContent } from './styles';
 import * as S from "./styles"
 
 export default function Modal(props) {
   return (
     <Container>
       <Content>
+        <HeaderContent>
+          <Fechar onClick={props.handleClose}>X</Fechar>
+        </HeaderContent>
+        <MainContent>
+
         <Img>
           <StyleImg>
             <img width={'256px'} height={'356px'} src={props.personagemAtual.image}  />
@@ -27,7 +32,7 @@ export default function Modal(props) {
           <P>Ancestralidade:<Color>{props.personagemAtual.ancestry}</Color></P>
           <P>Ator:<Color>{props.personagemAtual.actor}</Color></P>
         </Props>
-        <Fechar onClick={props.handleClose}>X</Fechar>
+        </MainContent>
       </Content>
     </Container>
   )
