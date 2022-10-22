@@ -104,7 +104,7 @@ export const Cards = styled.section`
     margin-top: 100px;
  }
  `
-export const Card1 = styled.div` 
+export const Cardone = styled.div` 
  background-image:url('/grifinoria.png'); 
  width:272px; 
  height:288px; 
@@ -113,7 +113,7 @@ export const Card1 = styled.div`
    padding: 30px 0;
 }
  `
-export const Card2 = styled.div`
+export const Cardtwo = styled.div`
  background-image:url('/sonserina.png'); 
  width:272px; 
  height:288px; 
@@ -122,7 +122,7 @@ export const Card2 = styled.div`
    padding: 30px 0;
 }
  `
-export const Card3 = styled.div` 
+export const Cardthree = styled.div` 
  background-image:url('/lufa-lufa.png'); 
  width: 272px; 
  height: 288px; 
@@ -131,7 +131,7 @@ export const Card3 = styled.div`
    padding: 30px 0;
 }
  `
-export const Card4 = styled.div` 
+export const Cardfour = styled.div` 
  background-image: url('/corvinal.png'); 
  width: 272px; 
  height: 288px; 

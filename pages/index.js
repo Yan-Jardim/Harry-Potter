@@ -24,16 +24,16 @@ export default function Home() {
             </S.Main>
             <S.Cards>
               <Link href={'/personagens?casa=gryffindor&numbre=gryffindor'}>
-                <S.Card1 />
+                <S.Cardone />
               </Link>
               <Link href={'/personagens?casa=slytherin&numbre=slytherin'}>
-                <S.Card2 />
+                <S.Cardtwo />
               </Link>
               <Link href={'/personagens?casa=hufflepuff&numbre=hufflepuff'}>
-                <S.Card3 />
+                <S.Cardthree/>
               </Link>
               <Link href={'/personagens?casa=ravenclaw&numbre=ravenclaw'}>
-                <S.Card4 />
+                <S.Cardfour/>
               </Link>
             </S.Cards>
           </S.Back>
