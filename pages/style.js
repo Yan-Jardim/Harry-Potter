@@ -109,19 +109,32 @@ export const Card1 = styled.div`
  background-image:url('/grifinoria.png'); 
  width:272px; 
  height:288px; 
+ @media (max-width:360px) {
+   background-repeat: no-repeat;
+   padding: 30px 0;
+}
  `
 export const Card2 = styled.div`
  background-image:url('/sonserina.png'); 
  width:272px; 
  height:288px; 
+ @media (max-width:360px) {
+   background-repeat: no-repeat;
+   padding: 30px 0;
+}
  `
 export const Card3 = styled.div` 
  background-image:url('/lufa-lufa.png'); 
  width: 272px; 
  height: 288px; 
+ @media (max-width:360px) {
+   background-repeat: no-repeat;
+   padding: 30px 0;
+}
  `
 export const Card4 = styled.div` 
  background-image: url('/corvinal.png'); 
  width: 272px; 
  height: 288px; 
  `
+ //Yan
