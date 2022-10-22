@@ -1,7 +1,8 @@
 html,
 body {
-  padding: 0;
-  margin: 0;
+  margin: 0 auto;
+  width: 1345px;
+  background-color: #031C29;
   font-family: Arial, Helvetica, sans-serif; 
 }
 

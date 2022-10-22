@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import * as S from "./style";
-import Modal from '../../Modal';
+import Modal from '../../components/Modal';
 import Link from "next/link";
 
 export default function AllPersonagens() {

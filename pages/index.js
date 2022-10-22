@@ -6,23 +6,20 @@ export default function Home() {
 
   return (
     <>
-      <S.back>
-        <S.Content>
-            <S.Target />
+      <S.Content>
+          <S.Target />
           <S.Background>
-              <S.Logo src={"bpo1.png"} />
-              <S.BoxBnt>
-                <Link href={'/personagens?casa=personagens&numbre=personagens'}>
-                  <S.Button>
-                    Veja Todos os Personagens
-                  </S.Button>
-                </Link>
-              </S.BoxBnt>
+            <S.Logo src={"bpo1.png"} />
+            <S.BoxBnt>
+              <Link href={'/personagens?casa=personagens&numbre=personagens'}>
+                <S.Button>
+                  Veja Todos os Personagens
+                </S.Button>
+              </Link>
+            </S.BoxBnt>
             <S.Main>
-              <S.LogoMain/>
-              <S.BoxText>
+              <S.LogoMain />
                 <S.Text>Navegue pelas Casas</S.Text>
-              </S.BoxText>
               <S.Border />
             </S.Main>
             <S.Cards>
@@ -38,10 +35,9 @@ export default function Home() {
               <Link href={'/personagens?casa=ravenclaw&numbre=ravenclaw'}>
                 <S.Card4 />
               </Link>
-            </S.Cards>             
+            </S.Cards>
           </S.Background>
-        </S.Content>
-      </S.back>
+      </S.Content>
     </>
   )
 }
