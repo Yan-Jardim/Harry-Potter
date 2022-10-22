@@ -193,12 +193,12 @@ export default function AllPersonagens() {
   return (
     <>
       <S.Container>
-        <S.Topo>
+        <S.Top>
           <Link href={"/"}>
             <S.Logo src={"/logo_harry_potter_wizard31.png"} />
           </Link>
-        </S.Topo>
-        <S.BoxBack>
+        </S.Top>
+        <S.SizeBack>
           <S.Main>
             <S.LogoMain />
             <S.BoxText>
@@ -211,7 +211,7 @@ export default function AllPersonagens() {
               {apiHouse()};
             </S.CardsImg>
           </S.CardsCenter>
-        </S.BoxBack>
+        </S.SizeBack>
         {
           modalIsOpen &&
           <Modal handleClose={() => setModalIsOpen(false)} personagemAtual={personagemAtual} />

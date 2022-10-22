@@ -4,7 +4,7 @@ export const Container = styled.div`
 background-image: url('/background_harry_azul_marinho3.png');
 
  `
-export const Topo = styled.div` 
+export const Top = styled.div` 
  background: #A6955A; 
  height: 103px; 
  display: flex; 
@@ -23,7 +23,7 @@ export const Logo = styled.img`
    height: 150px;
 } 
  `
-export const BoxBack = styled.div` 
+export const SizeBack = styled.div` 
  display: flex; 
  justify-content: center; 
  z-index: 0; 

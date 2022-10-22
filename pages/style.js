@@ -1,24 +1,23 @@
 import styled from 'styled-components'
 
-
 export const Content = styled.section` 
  width:1345px; 
  margin:0auto; 
  `
-export const Target = styled.div` 
+export const Top = styled.div` 
  border: 8px solid #A6955A; 
  @media (max-width:360px) {
     background-color: #A6955A;
     height: 50px;
  }
  `
-export const Background = styled.div` 
+export const Back = styled.div` 
  background-image:url('/hp-reu-hero22.png'); 
  background-size:cover; 
  background-repeat:no-repeat;
  height:730px; 
  `
-export const Logo = styled.img` 
+export const Soon = styled.img` 
  z-index:1; 
  margin: 120px 0px 0 120px; 
  @media (max-width:360px) {
@@ -26,7 +25,7 @@ export const Logo = styled.img`
     margin: 100px 0px 0px 400px;
  }
  `
-export const BoxBnt = styled.div` 
+export const SizeBnt = styled.div` 
  margin: 40px 0 0 175px; 
  font-weight: 700px; 
  @media (max-width:360px) {
@@ -64,7 +63,7 @@ display: flex;
 flex-direction: column;
 }
  `
-export const LogoMain = styled.div` 
+export const SoonMain = styled.div` 
  background-image:url('/hogwarts_shield1.png'); 
  width:72px; 
  height:84px; 

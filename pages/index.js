@@ -7,18 +7,18 @@ export default function Home() {
   return (
     <>
       <S.Content>
-          <S.Target />
-          <S.Background>
-            <S.Logo src={"bpo1.png"} />
-            <S.BoxBnt>
+          <S.Top />
+          <S.Back>
+            <S.Soon src={"bpo1.png"} />
+            <S.SizeBnt>
               <Link href={'/personagens?casa=personagens&numbre=personagens'}>
                 <S.Button>
                   Veja Todos<br/> os Personagens
                 </S.Button>
               </Link>
-            </S.BoxBnt>
+            </S.SizeBnt>
             <S.Main>
-              <S.LogoMain />
+              <S.SoonMain />
                 <S.Text>Navegue pelas Casas</S.Text>
               <S.Border />
             </S.Main>
@@ -36,7 +36,7 @@ export default function Home() {
                 <S.Card4 />
               </Link>
             </S.Cards>
-          </S.Background>
+          </S.Back>
       </S.Content>
     </>
   )
