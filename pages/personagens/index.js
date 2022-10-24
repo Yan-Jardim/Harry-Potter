@@ -163,45 +163,45 @@ export default function AllPersonagens() {
   }, []);
 
   const numbre = () => {
-    switch (person?.numbre) {     
-        case 'gryffindor': return (
-            <>
-                <p>grifinória</p>
-            </>
-        );
-        case 'slytherin': return (
-            <>
-                <p>soncerina</p> 
-           </>
-        );
-        case 'hufflepuff': return (
-            <>
-                <p>lufa-lufa</p>
-            </>
-        );
-        case 'ravenclaw': return (
-            <>
-                <p>corvinal</p>
-            </>
-        );      
-        case 'personagens': return (
-            <>
-                <p>PERSONAGENS</p>
-            </>
-        );      
+    switch (person?.numbre) {
+      case 'gryffindor': return (
+        <>
+          <p>grifinória</p>
+        </>
+      );
+      case 'slytherin': return (
+        <>
+          <p>soncerina</p>
+        </>
+      );
+      case 'hufflepuff': return (
+        <>
+          <p>lufa-lufa</p>
+        </>
+      );
+      case 'ravenclaw': return (
+        <>
+          <p>corvinal</p>
+        </>
+      );
+      case 'personagens': return (
+        <>
+          <p>PERSONAGENS</p>
+        </>
+      );
     }
-}
+  }
 
   return (
     <>
       <S.Container>
-       <Top/>
+        <Top />
         <S.SizeBack>
           <S.Main>
             <S.LogoMain />
             <S.BoxText>
               <Stage
-              text={numbre()}/>
+                text={numbre()} />
             </S.BoxText>
             <S.Border />
           </S.Main>

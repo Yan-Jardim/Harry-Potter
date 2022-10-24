@@ -1,12 +1,12 @@
 import * as S from "../../styles/styles.text";
 
-export default function Stage ({text}) {
+export default function Stage({ text }) {
 
-    return(
+    return (
         <>
-        <div>
-        <S.Text>{text}</S.Text>
-        </div>
+            <div>
+                <S.Text>{text}</S.Text>
+            </div>
         </>
     )
 }

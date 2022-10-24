@@ -1,16 +1,16 @@
 import * as S from "../../styles/styles.button";
 
-export default function Button({onClick, text1, text2}) {
+export default function Button({ onClick, text1, text2 }) {
 
-    return(
+    return (
         <>
-        <div>
-        <S.Button onClick={onClick}>
-              {text1}
-              <br/>
-              {text2}
-            </S.Button>
-        </div>
+            <div>
+                <S.Button onClick={onClick}>
+                    {text1}
+                    <br />
+                    {text2}
+                </S.Button>
+            </div>
         </>
     )
 }

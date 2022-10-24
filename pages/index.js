@@ -10,17 +10,17 @@ export default function Home() {
   return (
     <>
       <S.Content>
-          <S.Top />
-          <S.Back>
-           <Header/>
-            <S.Main>
-              <S.SoonMain />
-                <Stage
-                text={'Navegue pelas Casas'}/>
-              <S.Border />
-            </S.Main>
-           <Footer/>
-          </S.Back>
+        <S.Top />
+        <S.Back>
+          <Header />
+          <S.Main>
+            <S.SoonMain />
+            <Stage
+              text={'Navegue pelas Casas'} />
+            <S.Border />
+          </S.Main>
+          <Footer />
+        </S.Back>
       </S.Content>
     </>
   )
