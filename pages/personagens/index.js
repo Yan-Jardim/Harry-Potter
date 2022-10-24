@@ -1,8 +1,10 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
-import * as S from "./style";
+import * as S from "../../styles/styles.personagens";
 import Modal from '../../components/Modal';
-import Link from "next/link";
+import Top from "../../components/Topo";
+import Stage from "../../components/Text";
+
 
 export default function AllPersonagens() {
 
@@ -193,16 +195,13 @@ export default function AllPersonagens() {
   return (
     <>
       <S.Container>
-        <S.Top>
-          <Link href={"/"}>
-            <S.Logo src={"/logo_harry_potter_wizard31.png"} />
-          </Link>
-        </S.Top>
+       <Top/>
         <S.SizeBack>
           <S.Main>
             <S.LogoMain />
             <S.BoxText>
-              <S.Text>{numbre()} </S.Text>
+              <Stage
+              text={numbre()}/>
             </S.BoxText>
             <S.Border />
           </S.Main>

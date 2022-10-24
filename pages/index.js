@@ -1,6 +1,9 @@
 import React from 'react';
-import * as S from "./style";
-import Link from 'next/link';
+import * as S from "../styles/styles.home";
+import Footer from '../components/Footer';
+import Header from '../components/Header';
+import Stage from '../components/Text';
+
 
 export default function Home() {
 
@@ -9,33 +12,14 @@ export default function Home() {
       <S.Content>
           <S.Top />
           <S.Back>
-            <S.Soon src={"bpo1.png"} />
-            <S.SizeBnt>
-              <Link href={'/personagens?casa=personagens&numbre=personagens'}>
-                <S.Button>
-                  Veja Todos<br/> os Personagens
-                </S.Button>
-              </Link>
-            </S.SizeBnt>
+           <Header/>
             <S.Main>
               <S.SoonMain />
-                <S.Text>Navegue pelas Casas</S.Text>
+                <Stage
+                text={'Navegue pelas Casas'}/>
               <S.Border />
             </S.Main>
-            <S.Cards>
-              <Link href={'/personagens?casa=gryffindor&numbre=gryffindor'}>
-                <S.Cardone />
-              </Link>
-              <Link href={'/personagens?casa=slytherin&numbre=slytherin'}>
-                <S.Cardtwo />
-              </Link>
-              <Link href={'/personagens?casa=hufflepuff&numbre=hufflepuff'}>
-                <S.Cardthree/>
-              </Link>
-              <Link href={'/personagens?casa=ravenclaw&numbre=ravenclaw'}>
-                <S.Cardfour/>
-              </Link>
-            </S.Cards>
+           <Footer/>
           </S.Back>
       </S.Content>
     </>
